@@ -1,0 +1,6 @@
+@NBA.api_HostAddress = http://localhost:5258
+
+GET {{NBA.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
