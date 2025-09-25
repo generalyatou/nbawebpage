@@ -13,7 +13,7 @@ public class NBADetailsService : INbaDetailsService
 {
     private readonly IDbContextFactory<NBAContext> _dbContextFactory;
 
-    public NBADetailsService(IDbContextFactory<NBAContext> _dbContextFactory) => _dbContextFactory = _dbContextFactory;
+    public NBADetailsService(IDbContextFactory<NBAContext> dbContextFactory) => _dbContextFactory = dbContextFactory;
 
     public async Task<NBADetails> RetrieveNBADetailsAsync(DateTime? start, DateTime? end, int? teamId, CancellationToken ct)
     {
